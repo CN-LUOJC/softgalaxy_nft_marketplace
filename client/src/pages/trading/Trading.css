@@ -1,0 +1,229 @@
+#trading .chartCard {
+  background-color: var(--dark-gray);
+  border-radius: var(--_15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#trading .chartTitle {
+  font-size: calc(100% + 0.8vw + 0.8vh);
+}
+
+#trading .chartSubtitle {
+  opacity: 0.7;
+  max-width: 520px;
+}
+
+#trading .statsRow {
+  gap: 1rem;
+}
+
+#trading .statBox {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: var(--_10px);
+  padding: 0.9rem 1rem;
+}
+
+#trading .statLabel {
+  display: block;
+  color: var(--dark-white);
+}
+
+#trading .statValue {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+#trading .chartGrid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+  height: 400px;
+}
+
+#trading .chartColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+#trading .barRate {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  height: 1.2rem;
+}
+
+#trading .barRate.positive {
+  color: #a3ff91;
+}
+
+#trading .barRate.negative {
+  color: #ff8d8d;
+}
+
+#trading .chartBar {
+  width: 100%;
+  min-height: 3rem;
+  background: linear-gradient(180deg, var(--lemon) 0%, #f6d86b 100%);
+  border-radius: var(--_10px) var(--_10px) 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#trading .barValue {
+  font-size: 0.75rem;
+  padding: 0.45rem 0.3rem;
+  color: var(--black);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  margin-bottom: 0.4rem;
+}
+
+#trading .barLabel {
+  margin-top: 0.8rem;
+  color: var(--white);
+}
+
+#trading .chartControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+#trading .periodButton {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+#trading .periodButton:hover,
+#trading .periodButton.active {
+  background: var(--lemon);
+  color: var(--black);
+  border-color: var(--lemon);
+}
+
+#trading .overviewSection {
+  gap: 1.5rem;
+}
+
+#trading .marketOverview,
+#trading .topMoversCard {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: var(--_15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#trading .marketOverview {
+  flex: 1.2;
+}
+
+#trading .topMoversCard {
+  flex: 0.85;
+  min-width: 280px;
+}
+
+#trading .subtitle {
+  color: var(--dark-white);
+}
+
+#trading .metricCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+#trading .metricCard {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: var(--_10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#trading .metricIcon {
+  display: inline-flex;
+  color: var(--lemon);
+  font-size: 1.15rem;
+}
+
+#trading .metricTrend.positive {
+  color: #a3ff91;
+}
+
+#trading .metricTrend.negative {
+  color: #ff8d8d;
+}
+
+#trading .metricLabel {
+  display: block;
+  margin-top: 1rem;
+  color: var(--dark-white);
+}
+
+#trading .metricValue {
+  display: block;
+  margin-top: 0.35rem;
+}
+
+#trading .sectionTitle {
+  font-size: 1.1rem;
+}
+
+#trading .badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+}
+
+#trading .topMoverItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#trading .topMoverItem:last-child {
+  border-bottom: none;
+}
+
+#trading .moverName {
+  display: block;
+  color: var(--white);
+}
+
+#trading .moverOwner {
+  display: block;
+  color: var(--dark-white);
+}
+
+#trading .moverPrice {
+  display: block;
+  color: var(--white);
+}
+
+#trading .moverChange.positive {
+  color: #a3ff91;
+}
+
+#trading .moverChange.negative {
+  color: #ff8d8d;
+}
+
+#trading .summaryLabel {
+  color: var(--dark-white);
+}
+
+#trading .summaryAmount {
+  color: var(--white);
+}

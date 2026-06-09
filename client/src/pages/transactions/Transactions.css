@@ -1,0 +1,97 @@
+#transactions .historyCard {
+  background-color: var(--dark-gray);
+  border-radius: var(--_15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#transactions .historyHeader {
+  gap: 1rem;
+}
+
+#transactions .historyTitle {
+  font-size: calc(100% + 0.8vw + 0.8vh);
+}
+
+#transactions .historySubtitle {
+  opacity: 0.7;
+  max-width: 560px;
+}
+
+#transactions .historyStats {
+  gap: 1rem;
+}
+
+#transactions .statBox {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: var(--_10px);
+  padding: 0.9rem 1rem;
+  text-align: right;
+}
+
+#transactions .statLabel {
+  display: block;
+  color: var(--dark-white);
+}
+
+#transactions .statValue {
+  display: block;
+  margin-top: 0.3rem;
+  width: 100%;
+}
+
+#transactions .tableWrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+#transactions .historyRow {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.9fr 1.7fr 0.9fr 0.9fr 0.8fr 0.9fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#transactions .historyRow.headerRow {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.16);
+  color: var(--dark-white);
+  font-family: WorkSans-S;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: grid;
+}
+
+#transactions .historyCell {
+  color: var(--white);
+}
+
+#transactions .historyCell.buy {
+  color: #7ef4d4;
+}
+
+#transactions .historyCell.sell {
+  color: #ffb36d;
+}
+
+#transactions .status.completed {
+  color: #a3ff91;
+}
+
+#transactions .status.pending {
+  color: #ffd54f;
+}
+
+@media (max-width: 767px) {
+  #transactions .historyRow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #transactions .historyRow.headerRow {
+    display: none;
+  }
+
+  #transactions .historyCell {
+    font-size: 0.95rem;
+  }
+}
